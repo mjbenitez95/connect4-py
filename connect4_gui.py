@@ -8,7 +8,7 @@ COLORS = {
   "BLUE": (0, 0, 255),
   "BLACK": (0, 0, 0),
   "YELLOW": (255, 255, 0),
-  "LIGHT_BLUE": (0, 0, 128),
+  "WHITE": (255, 255, 255)
 }
 
 PIECE_COLORS = [COLORS["BLACK"], COLORS["RED"], COLORS["YELLOW"]]
@@ -100,7 +100,7 @@ class Connect4_Gui(Connect4):
       moves = self.get_available_moves()
     
     if winner == False and moves == []:
-      label = my_font.render("It's a draw!", 1, COLORS["LIGHT_BLUE"])
+      label = my_font.render("It's a draw!", 1, COLORS["WHITE"])
       self.SCREEN.blit(label, (40, 10))
       self.draw_board()
   
