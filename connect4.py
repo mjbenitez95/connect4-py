@@ -48,7 +48,7 @@ class Connect4():
     return False
 
 def main():
-  XO = {-1: "O", 0: "Nobody", 1: "X"}
+  XO = {0: "Nobody", 1: "X", -1: "O"}
   my_game = Connect4()
   moves = my_game.get_available_moves()
   print(my_game)
@@ -56,7 +56,7 @@ def main():
   # game always starts with 1
   player = 1
 
-  # select randomly if human is 1 or -1
+  # select randomly if human is player 1 or -1
   human_player = rand.choice([1, -1])
 
   # when moves = [], we have a draw
