@@ -74,7 +74,7 @@ class Connect4_Gui(Connect4):
             self.make_move(move)
             self.draw_board()
             if self.get_winner():
-              label = my_font.render("Human wins!", 1, PIECE_COLORS[player])
+              label = my_font.render("You win!", 1, PIECE_COLORS[player])
               self.SCREEN.blit(label, (40, 10))
               self.draw_board()
               winner = True
